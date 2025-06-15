@@ -14,17 +14,13 @@ using Clock = std::chrono::high_resolution_clock;
 
 void printMenu(){
     std::cout<<"
-=== STUDENT SYSTEM v3.0 ===
+=== STUDENT SYSTEM  ===
 "
-             <<"1) Interactive
-"
-             <<"2) Batch
-"
-             <<"3) Generate tests
-"
-             <<"4) Exit
-"
-             <<"Choice: ";
+             <<"1) Interactive"
+             <<"2) Batch"
+             <<"3) Generuoti testus"
+             <<"4) Baigti"
+             <<"Pasirinkimas: ";
 }
 
 int ask(int lo,int hi){
@@ -32,13 +28,13 @@ int ask(int lo,int hi){
     while(!(std::cin>>x) || x<lo||x>hi){
         std::cin.clear(); std::cin.ignore(1e6,'
 ');
-        std::cout<<"Bad, try again: ";
+        std::cout<<"Neinka, bandykite is naujp: ";
     }
     return x;
 }
 
 std::string askFile(){
-    std::cout<<"File name: "; std::string s; std::cin>>s; return s;
+    std::cout<<"Failo pavadinimas: "; std::string s; std::cin>>s; return s;
 }
 
 template<typename C>
