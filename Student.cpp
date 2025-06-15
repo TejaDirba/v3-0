@@ -37,4 +37,5 @@ void Student::calculateFinalGrades() {
 }
 
 std::istream& operator>>(std::istream& is, Student& s){ std::string v,p; is>>v>>p; s.setVardas(v);s.setPavarde(p); return is; }
-std::ostream& operator<<(std::ostream& os, const Student& s){ os<<s.getPavarde()<<" "<<s.getVardas()<<" "<<s.getGalutinisVid()<<" "<<s.getGalutinisMed(); return os; }
+std::ostream& operator<<(std::ostream& os, const Student& s){ os<<s.getPavarde()<<" "<<s.getVardas()<<" "<<s.getGalutinisVid()<<" "<<s.getGalutinisMed(); return os; 
+}
