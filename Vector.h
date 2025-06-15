@@ -1,9 +1,10 @@
 #ifndef VECTOR_H
 #define VECTOR_H
 
-#include <algorithm>    // std::copy, std::move
+#include <algorithm>
 #include <initializer_list>
 #include <stdexcept>
+#include <utility>
 
 template<typename T>
 class Vector {
