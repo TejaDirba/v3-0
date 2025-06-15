@@ -34,5 +34,6 @@ public:
     void calculateFinalGrades();
     friend std::istream& operator>>(std::istream& is, Student& s);
     friend std::ostream& operator<<(std::ostream& os, const Student& s);
+
 };
 #endif
